@@ -1,47 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Radiant Respite Hotel" >
-    <title>Radiant Respite Hotel</title> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Radiant Respite Hotel" />
+    <title>Radiant Respite Hotel</title>
 
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
     <header>
-        
-        <h1>Welcome to Radiant Respite Hotel</h1>
-        <nav>
-             <ul>
-                <li>
-                    <a href="#about">About <abbr title="Radiant Respite Hotel">RRH</abbr></a>
-                </li>
-                <li>
-                    <a href="#menu">Menu</a>                  
-                </li>
-                <li>
-                    <a href="hours.html">Working Hours</a>    
-                </li>
-                <li>
-                    <a href="contact.html">Contact Us</a>
-                </li>
-             </ul>
-        </nav>
+      <h1>Welcome to Radiant Respite Hotel</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about"
+              >About <abbr title="Radiant Respite Hotel">RRH</abbr></a
+            >
+          </li>
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="hours.html">Working Hours</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
 
-        <figure>
-            <img src="home.jpg" alt="RRH" width="350" height="200">
-            <figcaption>Radient Respite Hotel</figcaption>
-        </figure>
+      <figure>
+        <img src="home.jpg" alt="RRH" width="350" height="200" />
+        <figcaption>Radient Respite Hotel</figcaption>
+      </figure>
     </header>
-    <hr>
+    <hr />
     <main>
-        <!-- Main content of the page eg about, menu --> 
+      <!-- Main content of the page eg about, menu -->
+
+      <article id="about">
+        <h2>About <abbr title="Radiant Respite Hotel">RRH</abbr></h2>
+
+        <p>
+          <abbr title="Radiant Respite Hotel">RRH</abbr> Is a high class Hotel
+          which was founded in the year <time datetime="2010">2010</time>. This
+          Hotel was build by the Local Kenyas engineers through their
+          <strong>love</strong>🏨🏨🏨. We welcome costomers from alover the
+          world to come and enjoy traditional food.
+        </p>
+
+        <aside>
+          <h3>Radient Respite</h3>
+          <details>
+            <summary>Who are the founders of Radient Respite Hotel.</summary>
+
+            <p>
+              David Aboge, Linus Onyango were the founders of the Hotel in
+              <time datetime="2010">2010</time> .
+            </p>
+          </details>
+        </aside>
+      </article>
+
+      <hr />
+
+      <article id="menu">
+        <h2>Our Menu</h2>
+
+        <table>
+          <caption>
+            Our Best Choice
+          </caption>
+          <thead>
+            <tr>
+              <th>Drinks</th>
+              <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="3">Crunchy</th>
+              <td>1</td>
+              <td>USD 2</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>USD 4</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>USD 6</td>
+            </tr>
+
+            <tr>
+              <th scope="row" rowspan="3">Soft</th>
+              <td>1</td>
+              <td>USD 3</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>USD 6</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>USD 9</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">Chips &amp; Salsa USD 2</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <br />
+        <p>
+          <a href="#"> Back to top</a>
+        </p>
+      </article>
     </main>
 
     <footer>
-        <p>&copy;Radiant Respite Hotel</p>
+      <p>&copy;Radiant Respite Hotel</p>
     </footer>
     
-</body>
+  </body>
 </html>

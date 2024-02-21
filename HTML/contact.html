@@ -1,47 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Radiant Respite Hotel" >
-    <title>Contact us</title> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Radiant Respite Hotel" />
+    <title>Contact us</title>
 
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
     <header>
-        
-        <h1>Contact us</h1>
-        <nav>
-             <ul>
-                <li>
-                    <a href="home.html">About <abbr title="Radiant Respite Hotel">RRH</abbr></a>
-                </li>
-                <li>
-                    <a href="#menu">Menu</a>                  
-                </li>
-                <li>
-                    <a href="hours.html">Working Hours</a>    
-                </li>
-                <li>
-                    <a href="#contact">Contact Us</a>
-                </li>
-             </ul>
-        </nav>
+      <h1>Contact us</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html#about"
+              >About <abbr title="Radiant Respite Hotel">RRH</abbr></a
+            >
+          </li>
+          <li>
+            <a href="home.html#menu">Menu</a>
+          </li>
+          <li>
+            <a href="hours.html">Working Hours</a>
+          </li>
+        </ul>
+      </nav>
 
-        <figure>
-            <img src="contact.jpg" alt="RRH" width="350" height="200">
-            <figcaption>Radient Respite Hotel</figcaption>
-        </figure>
+      <figure>
+        <img src="contact.jpg" alt="RRH" width="350" height="200" />
+        <figcaption>Radient Respite Hotel</figcaption>
+      </figure>
     </header>
-    <hr>
+
+    <hr />
     <main>
-        <!-- Main content of the page goes here --> 
+      <section>
+        <!-- Main content of the page goes here -->
+        <h2>Our contact form</h2>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Speak to us</legend>
+            <p>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="message">Type your message here</label>
+              <br />
+
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="type message"
+                required
+              ></textarea>
+            </p>
+          </fieldset>
+
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Our location</h2>
+        <address>
+          312 Homa Bay Town <br />
+          40300
+          <br />
+          Phone: <a href="tel: + 254 780786372">780786372</a>
+        </address>
+      </section>
+
+      <p>
+        <a href="#">Back to top</a>
+      </p>
     </main>
 
     <footer>
-        <p>&copy;Radiant Respite Hotel</p>
+      <p>&copy;Radiant Respite Hotel</p>
     </footer>
-    
-</body>
+  </body>
 </html>
